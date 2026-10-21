@@ -1,6 +1,6 @@
 {
   "name": "@fish-under-sea/dsh-purge-fish",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "DeepSeek Harness 破甲（Fish 版）：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。基于上游 YuJunZhiXue/dsh-purge v1.1.71（MIT），修复 0.2.1-rc.2 插值变量兼容。二开请查看署名要求",
   "type": "module",
   "main": "lib/index.js",
