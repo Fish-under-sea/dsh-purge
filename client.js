@@ -1,4 +1,4 @@
-window.__ModuleLoader__.load({ id: "dsh-purge", factory: (require) => {
+window.__ModuleLoader__.load({ id: "@fish-under-sea/dsh-purge-fish", factory: (require) => {
 
 		var module = { exports: {} };
 		var exports = module.exports;
@@ -7,7 +7,7 @@ window.__ModuleLoader__.load({ id: "dsh-purge", factory: (require) => {
 		const h = react.createElement;
 		const { useState, useEffect, useCallback, useRef, Component } = react;
 
-		const name = "dsh-purge";
+		const name = "@fish-under-sea/dsh-purge-fish";
 		const inject = ["slots", "locale"];
 		const NS = "settings.dsh-purge";
 		let translate = (key) => key;

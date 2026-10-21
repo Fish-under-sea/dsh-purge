@@ -39,13 +39,13 @@ async function main() {
   const mode = args.find((a) => ["--apply", "--revert", "--uninstall", "--status", "--edit", "--help"].includes(a));
 
   if (mode === "--help" || args.includes("-h")) {
-    console.log(`dsh-purge 用法:
-  dsh-purge --status     显示状态
-  dsh-purge --apply      应用全部清洗（提示词+代码+shim+override）
-  dsh-purge --revert     回滚还原
-  dsh-purge --uninstall  卸载插件（已应用则先还原）
-  dsh-purge --edit       编辑注入文件 prompt-inject.md
-  dsh-purge --help       帮助`);
+    console.log(`dsh-purge-fish 用法:
+  dsh-purge-fish --status     显示状态
+  dsh-purge-fish --apply      应用全部清洗（提示词+代码+shim+override）
+  dsh-purge-fish --revert     回滚还原
+  dsh-purge-fish --uninstall  卸载插件（已应用则先还原）
+  dsh-purge-fish --edit       编辑注入文件 prompt-inject.md
+  dsh-purge-fish --help       帮助`);
     return;
   }
 

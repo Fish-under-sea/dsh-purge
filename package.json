@@ -1,7 +1,7 @@
 {
-  "name": "dsh-purge",
-  "version": "1.1.71",
-  "description": "DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ 如要二开，请查看署名要求部分",
+  "name": "@fish-under-sea/dsh-purge-fish",
+  "version": "1.0.2",
+  "description": "DeepSeek Harness 破甲（Fish 版）：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。基于上游 YuJunZhiXue/dsh-purge v1.1.71（MIT），修复 0.2.1-rc.2 插值变量兼容。二开请查看署名要求",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -16,7 +16,7 @@
     "./package.json": "./package.json"
   },
   "bin": {
-    "dsh-purge": "bin/dsh-purge.js"
+    "dsh-purge-fish": "bin/dsh-purge.js"
   },
   "files": [
     "lib",
@@ -55,11 +55,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YuJunZhiXue/dsh-purge.git"
+    "url": "git+https://github.com/Fish-under-sea/dsh-purge.git"
   },
-  "homepage": "https://github.com/YuJunZhiXue/dsh-purge#readme",
+  "homepage": "https://github.com/Fish-under-sea/dsh-purge#readme",
   "bugs": {
-    "url": "https://github.com/YuJunZhiXue/dsh-purge/issues"
+    "url": "https://github.com/Fish-under-sea/dsh-purge/issues"
   },
   "dsh": {
     "bundle": {
@@ -77,9 +77,9 @@
     },
     "install": {
       "preferred": "tarball",
-      "tarball": "https://github.com/YuJunZhiXue/dsh-purge/archive/refs/heads/master.tar.gz",
-      "zip": "https://github.com/YuJunZhiXue/dsh-purge/archive/refs/heads/master.zip",
-      "git": "https://github.com/YuJunZhiXue/dsh-purge.git"
+      "tarball": "https://github.com/Fish-under-sea/dsh-purge/archive/refs/heads/master.tar.gz",
+      "zip": "https://github.com/Fish-under-sea/dsh-purge/archive/refs/heads/master.zip",
+      "git": "https://github.com/Fish-under-sea/dsh-purge.git"
     }
   },
   "publishConfig": {
@@ -91,5 +91,5 @@
   "engines": {
     "node": ">=18"
   },
-  "dshTarget": "0.2.0-rc.2"
+  "dshTarget": "0.2.1-rc.2"
 }

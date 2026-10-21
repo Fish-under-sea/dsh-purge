@@ -37,7 +37,7 @@
 
 - insert:
     - id: dsh-purge
-      name: 'dsh-purge'
+      name: '@fish-under-sea/dsh-purge-fish'
       inject: [systemPrompt, tools]
       config:
         enabled: true
@@ -59,14 +59,14 @@
 
     # 演练台：预设 + 技能落地（本插件 lib/redteam）
     - id: dsh-purge-redteam
-      name: dsh-purge/redteam
+      name: '@fish-under-sea/dsh-purge-fish/redteam'
 
     # 演练台事实库（SQLite），数据在 $DSH_HOME/redteam
     - id: dsh-purge-redteam-store
-      name: dsh-purge/redteam/store
+      name: '@fish-under-sea/dsh-purge-fish/redteam/store'
       config:
         root: !!js dshHomePath('redteam')
 
     # 演练台 HTTP 桥 POST /redteam/api
     - id: dsh-purge-redteam-ui
-      name: dsh-purge/redteam/ui
+      name: '@fish-under-sea/dsh-purge-fish/redteam/ui'
