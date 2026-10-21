@@ -28,7 +28,9 @@
   config:
     includeHarnessIdentity: false
     personaPrefix: ""
-    personaSuffix: Your working directory is {{cwd}}.
+    # [dsh-purge-fix 2026-10-21] {{cwd}} 未注册进 0.2.1-rc.2 的插值变量表 →
+    # unknown prompt variable "{{cwd}}"，整轮失败。改成不插值的固定句。
+    personaSuffix: Your working directory is the session workspace.
 
 - id: dsh-purge
   inject: [systemPrompt, tools]
